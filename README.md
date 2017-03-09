@@ -1,5 +1,5 @@
 # Bilibili-speed
-Change play speed of HTML5 player in www.bilibili.com is so suck :astonished:. Hence I develop this Chrome extention to make it easy~
+Change HTML5 player speed in www.bilibili.com is so suck :astonished:. Hence I develop this Chrome extention to make it easy~
 
 ## Usage
 When you visit a page with HTML5 player in www.bilibili.com, you can: 
