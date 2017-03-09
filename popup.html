@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>popup</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            width: 200px;
+        }
+
+        .tips {
+            padding: .25em;
+            font-size: 1.25em;
+            color: #655;
+        }
+
+        .speed-list li {
+            padding: .5em;
+            border-top: solid 2px #aaa;
+        }
+
+        .speed-list li:hover {
+            background-color: #ddd;
+            cursor: pointer;
+        }
+
+        .speed-list li.active {
+            background-color: #58a;
+            color: #eee;
+        }
+    </style>
+</head>
+<body>
+    <h3 class="tips">选择播放速度：</h3>
+    <ul class="speed-list">
+        <li data-value="0.5">0.5</li>
+        <li data-value="1">1</li>
+        <li data-value="1.25">1.25</li>
+        <li data-value="1.5">1.5</li>
+        <li data-value="2">2</li>
+    </ul>
+    <script src="js/popup.js"></script>
+</body>
+</html>

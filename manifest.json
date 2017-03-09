@@ -1,0 +1,36 @@
+{
+    "manifest_version": 2,
+    "name": "BiliBili Speed",
+    "version": "1.0",
+    "description": "Set play speed of bilibili palyer.",
+    "icons": {
+        "48": "logo.png"
+    },
+    "permissions": ["tabs", "http://*.bilibili.com/*"],
+    "background": {
+        "scripts": ["js/background.js"]
+    },
+    "browser_action": {
+        "default_title": "BiliBili Speed",
+        "default_icon": "logo.png",
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [{
+        "matches": ["http://*.bilibili.com/*"],
+        "js": ["js/speed.js"]
+    }],
+    "commands": {
+        "speed_up": {
+            "suggested_key": {
+                "default": "Alt+Right"
+            },
+            "description": "Speed up."
+        },
+        "speed_down": {
+            "suggested_key": {
+                "default": "Alt+Left"
+            },
+            "description": "Speed down."
+        }
+    }
+}
